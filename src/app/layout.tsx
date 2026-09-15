@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "Precedent — Commercial law, explained",
   description:
     "Short briefings on commercial law and legal-AI developments for aspiring commercial lawyers — what happened, and why it happened.",
+  verification: {
+    google: "ZBssDC1uW0NrMT6w50SL9c3nNRm0v_shkZ5bKToaBY0",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
