@@ -1,4 +1,4 @@
-# Precedent
+# Ratio
 
 Short briefings on commercial law and legal-AI developments for aspiring
 commercial lawyers — each one explains what happened *and why it happened*,

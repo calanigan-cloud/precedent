@@ -19,7 +19,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Precedent — Commercial law, explained",
+  title: "Ratio — Commercial law, explained",
   description:
     "Short briefings on commercial law and legal-AI developments for aspiring commercial lawyers — what happened, and why it happened.",
   verification: {
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <header className="border-b border-border">
           <div className="mx-auto max-w-3xl px-5 py-5 flex items-baseline justify-between">
             <Link href="/" className="font-serif text-2xl tracking-tight">
-              Precedent
+              Ratio
             </Link>
             <span className="text-xs uppercase tracking-widest text-muted hidden sm:block">
               Commercial law, explained
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="border-t border-border mt-16">
           <div className="mx-auto max-w-3xl px-5 py-8 text-xs text-muted leading-relaxed">
             <p>
-              Precedent is a briefing format, not a news wire — each segment
+              Ratio is a briefing format, not a news wire — each segment
               exists to explain why a commercial law or legal-AI story
               happened, not just to report that it did. Source links point to
               the original reporting for every story.

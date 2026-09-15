@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Drafts a new Precedent segment from a source URL using the Anthropic API.
+// Drafts a new Ratio segment from a source URL using the Anthropic API.
 // Usage: ANTHROPIC_API_KEY=sk-... node scripts/generate-segment.mjs "<source url>" "[category: ai-law|ma|regulatory|ethics]"
 //
 // Fetches the article text, asks Claude to draft the segment fields in the
@@ -26,7 +26,7 @@ if (!process.env.ANTHROPIC_API_KEY) {
 const client = new Anthropic();
 
 const res = await fetch(sourceUrl, {
-  headers: { "User-Agent": "Mozilla/5.0 (Precedent segment generator)" },
+  headers: { "User-Agent": "Mozilla/5.0 (Ratio segment generator)" },
 });
 if (!res.ok) {
   console.error(`Failed to fetch ${sourceUrl}: ${res.status}`);
@@ -41,7 +41,7 @@ const text = html
   .trim()
   .slice(0, 20000);
 
-const prompt = `You are drafting a segment for Precedent, a briefing site for aspiring commercial lawyers. Each segment explains not just what happened in a commercial law or legal-AI story, but *why* it happened and why it matters to someone training to become a commercial lawyer.
+const prompt = `You are drafting a segment for Ratio, a briefing site for aspiring commercial lawyers. Each segment explains not just what happened in a commercial law or legal-AI story, but *why* it happened and why it matters to someone training to become a commercial lawyer.
 
 Source URL: ${sourceUrl}
 Category: ${category}

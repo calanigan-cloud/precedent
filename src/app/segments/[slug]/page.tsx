@@ -24,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const segment = getSegmentBySlug(slug);
   if (!segment) return {};
-  return { title: `${segment.title} — Precedent`, description: segment.dek };
+  return { title: `${segment.title} — Ratio`, description: segment.dek };
 }
 
 export default async function SegmentPage({
